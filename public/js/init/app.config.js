@@ -1,0 +1,19 @@
+app.config(function($routeProvider){
+	$routeProvider.when('/page',{
+		controller:'MainController',
+		templateUrl:'template/page/create.html'
+	})
+	.when('/page/create',{
+		controller:'MainController',
+		templateUrl:'partials/view2.html'
+	})
+	.when('/page/:id/edit',{
+		controller:'MainController',
+		templateUrl:'partials/view2.html'
+	})
+	.when('/page/:id',{
+		controller:'MainController',
+		templateUrl:'partials/view2.html'
+	});
+	
+});

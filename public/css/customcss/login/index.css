@@ -1,0 +1,19 @@
+body{
+	background: #6DE9F9;
+}
+.login-form-wrapper{
+	max-width: 300px;
+	margin: 100px auto;
+}
+
+.login-form-wrapper form{
+	padding: 20px;
+	background: #fff;
+	margin-top: 20px;
+}
+.form-control{
+	border: 2px solid #ccc;
+}
+.form-control-feedback{
+	color: #b8b8b8;
+}

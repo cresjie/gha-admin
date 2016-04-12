@@ -1,0 +1,32 @@
+<h2>Page</h2>
+<a class="btn btn-success btn-xs" href="#page/create">Add Page</a>
+
+<div class="table-responsive page-list-wrapper">
+	<table class="table">
+		<thead>
+			<tr>
+				<th width="80%">Title</th>
+				<th width="10%">Author</th>
+				<th width="10%">Publish</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="page in pages.data" class="page-item">
+				<td>
+					<a href="#/page/{{page.id}}/edit">{{page.title}}</a>
+					<div class="page-action">
+						<ul class="list-inline">
+							<li><a href="#page/{{page.id}}/edit">Edit</a></li>
+							<!--<li><a href="">View</a></li>-->
+							<li><a target="_blank" href="{{sites.gighubapp}}/page/{{page.slug}}">Gighubapp</a></li>
+							<li><a href="javascript:;" ng-click="delete(page)">Delete</a></li>
+						</ul>
+					</div>
+				</td>
+				<td>{{page.author.first_name}}</td>
+				<td>{{page.published_at ? datetimeFormat(page.published_at, 'MMMM D, YYYY') : ''}}</td>
+			</tr>
+
+		</tbody>
+	</table>
+</div>

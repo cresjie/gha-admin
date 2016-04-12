@@ -1,0 +1,9 @@
+.page-list-wrapper .page-action{
+	visibility: hidden;
+}
+.page-list-wrapper .page-item:hover .page-action{
+	visibility: visible;
+}
+.page-action a{
+	font-size: 10px;
+}
